@@ -23,7 +23,9 @@ public class OracleAtoNcmDAO implements AtoNcmDAO {
 	public Connection createConnection() {
 		try {
 			Class.forName(this.embeddedDriver);
-			String url = "jdbc:oracle:thin:SYSTEM/admin@localhost:1521:xe";
+			String user = "SYSTEM";
+			String password = "admin";
+			String url = "jdbc:oracle:thin:" + user + "/" + password + "@localhost:1521:xe";
 			this.cnn = DriverManager.getConnection(url);
 			return cnn;
 		} catch (Exception e) {

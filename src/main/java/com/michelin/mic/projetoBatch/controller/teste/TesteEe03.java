@@ -14,7 +14,7 @@ public class TesteEe03 {
 			List<Ee03> listEe03 = ee03DAO.findEe03();
 			
 			if (listEe03.isEmpty()) {
-				System.out.println("Deu ruim, a lista tá vazia...");
+				System.out.println("Lista está vazia");
 			} else {
 				for(Ee03 ee03 : listEe03) {
 					System.out.println("Código NCM: " + ee03.getCodNcm());

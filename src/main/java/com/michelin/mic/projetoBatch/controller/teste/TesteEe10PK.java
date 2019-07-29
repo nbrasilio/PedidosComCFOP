@@ -10,7 +10,7 @@ public class TesteEe10PK {
 			Ee10DAO ee10DAO = new OracleEe10DAO();
 			Integer recnoPk = ee10DAO.selectMaxRecno();
 			recnoPk++;
-			System.out.println("PK: " + recnoPk);
+			System.out.println("Next PK: " + recnoPk);
 		} catch (Exception e) {
 			e.getStackTrace();
 		}
